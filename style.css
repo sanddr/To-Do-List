@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shantell+Sans:wght@300&display=swap');
+
+body{
+    background: rgb(73,215,217);
+    background: linear-gradient(0deg, rgba(73,215,217,1) 42%, rgba(203,45,253,1) 100%);
+    height: 100vh;
+}
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#nav h2{
+    margin: 20px;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+    color: rgba(255, 255, 255, 0.699);
+
+}
+
+#input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 2px;
+}
+
+#input-box input{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 300px;
+    margin-right: 0;
+    border: 2px solid white;
+    font-size: 1rem;
+    padding: 8.5px;
+}
+#input-box button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 0;
+    padding: 10px;
+    border: none;
+    width: 80px;
+    cursor: pointer;
+    background: conic-gradient(at 0% 0%, snow, rgba(255, 255, 255, 0.675));
+    font-size: 12px;
+    color: rgb(60, 59, 59);
+    border: 2px solid white;
+}
+#alert{
+    margin-top: 0;
+    height: 20px;
+    color: rgba(216, 76, 76, 0.792);
+    font-family: 'Shantell Sans', cursive;
+}
+.all-items{
+    width: 95%;
+    height: auto;
+    margin: 2px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.item{
+    background-color: azure;
+    margin-top: 5px;
+    width: 800px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    height: fit-content;
+    min-height: 30px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    word-break: break-all;
+    font-family: 'Shantell Sans', cursive;
+}
+
+i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.fa-check-square{
+    color: grey;
+}
+.color-clicked{
+    color: limegreen;
+}
+
+.fa-trash{
+    color: rgba(255, 0, 0, 0.363);
+}
+.fa-trash:hover{
+    color: rgba(255, 0, 0, 0.597);
+}
+
+
+@media(max-width: 900px){
+    #nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #nav input{
+        width: 400px;
+    }
+    .item{
+        width: 600px;
+    }
+
+}
+
+@media(max-width: 720px){
+    .item{
+        width: 450px;
+    }
+}
